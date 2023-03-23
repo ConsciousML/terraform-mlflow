@@ -20,3 +20,14 @@ Follow this [link](https://developer.hashicorp.com/terraform/tutorials/gcp-get-s
 - - Select `ADD KEY` > `Create new key`
 - - Use JSON key type
 - - Save the key on disk
+
+### Terraform Configuration File
+Create a file called `terraform.tfvars` and add the following content:
+```terraform
+project_id = "<PROJECT_ID>"
+credentials_file = "<PATH/TO/FILE>.json"
+```
+Where `<PROJECT_ID>` is the ID of your GCP project and `<PATH/TO/FILE>.json` is the path to the service account key you downloaded in the previous step.
+
+This file will be used to populate the variables in the `variables.tf` file.
+Terraform will automatically load the variables from this file.
