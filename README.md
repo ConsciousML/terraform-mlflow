@@ -7,11 +7,14 @@ Follow this [link](https://developer.hashicorp.com/terraform/tutorials/gcp-get-s
 ### Setup GCP
 1. Create a GCP project [here](https://console.cloud.google.com/projectcreate) if you don't have one already
 2. Enable the following APIs:
-- - [CloudSQL](https://console.cloud.google.com/apis/library/sql-component.googleapis.com?project=ml-pipeline-380711)
-- - [Google Cloud Storage](https://console.cloud.google.com/apis/library/storage-component.googleapis.com?project=ml-pipeline-380711)
-- - [Secret Manager](https://console.cloud.google.com/apis/library/secretmanager.googleapis.com?project=ml-pipeline-380711)
-- - [App Engine](https://console.cloud.google.com/apis/library/appengine.googleapis.com?project=ml-pipeline-380711)
-- - [Artifact Registry](https://console.cloud.google.com/apis/library/artifactregistry.googleapis.com?project=ml-pipeline-380711)
+- - [CloudSQL](https://console.cloud.google.com/apis/library/sql-component.googleapis.com)
+- - [Google Cloud Storage](https://console.cloud.google.com/apis/library/storage-component.googleapis.com)
+- - [Secret Manager](https://console.cloud.google.com/apis/library/secretmanager.googleapis.com)
+- - [App Engine](https://console.cloud.google.com/apis/library/appengine.googleapis.com)
+- - [Artifact Registry](https://console.cloud.google.com/apis/library/artifactregistry.googleapis.com)
+- - [Identify Platform](https://console.cloud.google.com/marketplace/details/google-cloud-platform/customer-identity).
+- - [Identity-Aware Proxy](https://console.cloud.google.com/marketplace/details/google/iap.googleapis.com).
+- - [Cloud Resource Manager API](https://console.cloud.google.com/apis/library/cloudresourcemanager.googleapis.com)
 3. Create a service account [here](https://console.cloud.google.com/iam-admin/serviceaccounts) with the `Editor` role.
 4. Download your service account key:
 - - Go the `Service Account` tab in IAM
